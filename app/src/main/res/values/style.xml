@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TurqTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/turquoise</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+    <style name="DataTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="InputStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+</resources>

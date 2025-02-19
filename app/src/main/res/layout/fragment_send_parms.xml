@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/material_dynamic_tertiary90"
+    tools:context=".SendParmsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glCenter"
+            app:layout_constraintGuide_percent=".4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivLogoBazares"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toTopOf="@+id/glCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="0dp"
+            android:layout_height="110dp" />
+
+        <TextView
+            android:id="@+id/tvHeaderInit"
+            android:text="@string/title_login"
+            style="@style/TitleTextStyle"
+            app:layout_constraintTop_toBottomOf="@+id/glCenter"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:hint="@string/user"
+            style="@style/InputStyle"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderInit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+             />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="@string/password"
+            style="@style/InputStyle"
+            app:layout_constraintTop_toBottomOf="@+id/etUser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/btLogin"
+            android:text="@string/button_login"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvRegister"
+            app:layout_constraintTop_toBottomOf="@+id/btLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/register_link" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

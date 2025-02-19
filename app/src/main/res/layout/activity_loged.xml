@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_secondary90"
+    tools:context=".LogedActivity">
+
+
+    <!--GUIDELINES FORM-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartForm"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEndForm"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTopForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glBottomForm"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tvHeaderInit"
+        android:text="@string/title_welcome"
+        style="@style/TitleTextStyle"
+        app:layout_constraintTop_toTopOf="@+id/glTopForm"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:text="El nombre + apellido"
+        style="@style/DataTextStyle"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeaderInit"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_width="0dp"
+        android:layout_height="28dp" />
+    <TextView
+        android:id="@+id/tvCorreo"
+        android:text="El correo"
+        style="@style/DataTextStyle"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_width="0dp"
+        android:layout_height="28dp" />
+
+    <Button
+        android:id="@+id/btExit"
+        android:text="@string/button_exit"
+        app:layout_constraintBottom_toTopOf="@+id/glBottomForm"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
