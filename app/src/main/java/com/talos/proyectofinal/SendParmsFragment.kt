@@ -27,7 +27,7 @@ class SendParmsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
         binding.btLogin.setOnClickListener{
             val intent = Intent(requireContext(), LogedActivity::class.java)

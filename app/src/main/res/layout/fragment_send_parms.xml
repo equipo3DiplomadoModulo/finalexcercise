@@ -4,12 +4,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/material_dynamic_tertiary90"
     tools:context=".SendParmsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
+
+        <!--GUIDELINES FORM-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStartForm"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEndForm"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glTopForm"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBottomForm"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/glCenter"
@@ -20,7 +47,7 @@
 
         <ImageView
             android:id="@+id/ivLogoBazares"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/logo"
             app:layout_constraintBottom_toTopOf="@+id/glCenter"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +61,9 @@
             android:text="@string/title_login"
             style="@style/TitleTextStyle"
             app:layout_constraintTop_toBottomOf="@+id/glCenter"
-            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="@+id/glStartForm"
+            app:layout_constraintEnd_toEndOf="@+id/glEndForm"
+            android:layout_width="320dp"
             android:layout_height="35dp" />
 
         <EditText
@@ -42,9 +71,9 @@
             android:hint="@string/user"
             style="@style/InputStyle"
             app:layout_constraintTop_toBottomOf="@+id/tvHeaderInit"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="300dp"
+            app:layout_constraintStart_toStartOf="@id/glStartForm"
+            app:layout_constraintEnd_toEndOf="@id/glEndForm"
+            android:layout_width="0dp"
             android:layout_height="50dp"
              />
 
@@ -53,9 +82,9 @@
             android:hint="@string/password"
             style="@style/InputStyle"
             app:layout_constraintTop_toBottomOf="@+id/etUser"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="300dp"
+            app:layout_constraintStart_toStartOf="@id/glStartForm"
+            app:layout_constraintEnd_toEndOf="@id/glEndForm"
+            android:layout_width="0dp"
             android:layout_height="50dp" />
 
         <Button
@@ -66,6 +95,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_gravity="center"
             android:layout_marginTop="18dp"
+            android:backgroundTint="@color/turquoise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -77,6 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:textColor="@color/turquoise"
             android:text="@string/register_link" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

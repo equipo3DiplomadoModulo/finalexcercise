@@ -2,5 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="turquoise">#00BCD4</color>
+    <color name="turquoise">#004B56</color>
+    <color name="beige">#FFFACCA7</color>
+    <color name="cream">#FFF7EBCB</color>
+    <color name="straw">#FFFAF893</color>
+
 </resources>

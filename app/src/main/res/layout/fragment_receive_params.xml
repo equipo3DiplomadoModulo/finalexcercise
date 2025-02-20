@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/material_dynamic_primary80"
     tools:context=".ReceiveParamsFragment">
 
     <!-- GUIDELINES FRAME -->
@@ -69,20 +68,22 @@
 
     <ImageView
         android:id="@+id/ivLogo"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/logo"
         app:layout_constraintTop_toBottomOf="@+id/glTop"
         app:layout_constraintStart_toEndOf="@+id/glStart"
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        android:layout_marginHorizontal="70dp"
+
         android:layout_width="0dp"
         android:layout_height="110dp" />
 
     <TextView
         android:id="@+id/tvHeader"
-        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        app:layout_constraintTop_toBottomOf="@id/glTopForm"
+        app:layout_constraintStart_toStartOf="@+id/glStartForm"
+        app:layout_constraintEnd_toEndOf="@+id/glEndForm"
         android:text="@string/title_register"
         style="@style/TitleTextStyle"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="35dp" />
 
     <EditText
@@ -190,9 +191,10 @@
 
     <Button
         android:id="@+id/btRegister"
-        android:backgroundTint="@color/material_dynamic_tertiary20"
+        android:backgroundTint="@color/turquoise"
         app:layout_constraintTop_toBottomOf="@+id/tvMessages"
         app:layout_constraintStart_toEndOf="@id/glStartForm"
+
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

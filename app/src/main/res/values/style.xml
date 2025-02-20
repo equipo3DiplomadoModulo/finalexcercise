@@ -11,6 +11,8 @@
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:textAlignment">center</item>
         <item name="fontFamily">@font/montserrat</item>
+        <item name="android:background">@color/turquoise</item>
+        <item name="android:textColor">@color/white</item>
     </style>
     <style name="DataTextStyle" parent="Widget.AppCompat.TextView">
         <item name="android:textSize">14sp</item>
