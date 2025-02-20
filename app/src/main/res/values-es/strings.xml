@@ -5,14 +5,14 @@
 
     <!-- ********* Login Activity ************** -->
     <!-- Login Fragment Form -->
-    <string name="title_login">Ingresa tu información</string>
-    <string name="user">Usiario</string>
-    <string name="password">Contraseña</string>
-    <string name="button_login">Iniciar Sesión</string>
-    <string name="register_link">Aun no te has registrado?</string>
+    <string name="title_login">Enter your access data</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="button_login">Log in</string>
+    <string name="register_link">Have you not registered yet?</string>
 
     <!-- Register Fragment Form -->
-    <string name="title_register">Registra tu información</string>
+    <string name="title_register">Register your data</string>
     <string name="name">Name</string>
     <string name="secondname">Second name</string>
     <string name="email">e-mail</string>
