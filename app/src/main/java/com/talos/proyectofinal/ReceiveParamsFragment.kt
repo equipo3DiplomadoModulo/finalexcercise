@@ -30,8 +30,8 @@ class ReceiveParamsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        setHasOptionsMenu(true)
-        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        setHasOptionsMenu(false)
+        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
 
         binding.btRegister.setOnClickListener{
@@ -50,6 +50,16 @@ class ReceiveParamsFragment : Fragment() {
         }
 
     }
+
+    // EXTRA_USERNAME
+    // EXTRA_NAME
+    // EXTRA_SECOND_NAME
+    // EXTRA_EMAIL
+    // EXTRA_GENDER
+    // EXTRA_PASSWORD
+    // EXTRA_PASSWORD2
+
+
 
     companion object {
 

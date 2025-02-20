@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">proyectofinal</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <!-- ********* Login Activity ************** -->
     <!-- Login Fragment Form -->
-    <string name="title_login">Ingresa tu información</string>
+    <string name="title_login">Enter your access data</string>
     <string name="user">User</string>
     <string name="password">Password</string>
     <string name="button_login">Log in</string>
