@@ -68,19 +68,22 @@
 
         <EditText
             android:id="@+id/etUser"
-            android:hint="@string/user"
             style="@style/InputStyle"
-            app:layout_constraintTop_toBottomOf="@+id/tvHeaderInit"
-            app:layout_constraintStart_toStartOf="@id/glStartForm"
-            app:layout_constraintEnd_toEndOf="@id/glEndForm"
             android:layout_width="0dp"
             android:layout_height="50dp"
-             />
+            android:layout_marginTop="12dp"
+            android:hint="@string/user"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@id/glEndForm"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/glStartForm"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderInit" />
 
         <EditText
             android:id="@+id/etPassword"
             android:hint="@string/password"
             style="@style/InputStyle"
+            android:inputType="textPassword"
             app:layout_constraintTop_toBottomOf="@+id/etUser"
             app:layout_constraintStart_toStartOf="@id/glStartForm"
             app:layout_constraintEnd_toEndOf="@id/glEndForm"

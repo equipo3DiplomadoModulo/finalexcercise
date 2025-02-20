@@ -49,21 +49,103 @@
         android:layout_width="0dp"
         android:layout_height="35dp" />
 
+    <!-- USER LOGED INFORMATION -->
+
     <TextView
-        android:id="@+id/tvName"
-        android:text="El nombre + apellido"
+        android:id="@+id/tvLabelName"
+        android:text="@string/name"
         style="@style/DataTextStyle"
+        android:textStyle="bold"
+        android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/tvHeaderInit"
         app:layout_constraintStart_toEndOf="@+id/glStartForm"
         app:layout_constraintEnd_toStartOf="@+id/glEndForm"
         android:layout_marginTop="10dp"
         android:layout_width="0dp"
         android:layout_height="28dp" />
+
+
     <TextView
-        android:id="@+id/tvCorreo"
-        android:text="El correo"
+        android:id="@+id/tvName"
+        android:text="Data name"
         style="@style/DataTextStyle"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelName"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginTop="2dp"
+        android:layout_width="0dp"
+        android:layout_height="28dp" />
+
+    <TextView
+        android:id="@+id/tvLabelUser"
+        android:text="@string/user_label"
+        style="@style/DataTextStyle"
+        android:textStyle="bold"
+        android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="28dp" />
+
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:text="Data user"
+        style="@style/DataTextStyle"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelUser"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginTop="2dp"
+        android:layout_width="0dp"
+        android:layout_height="28dp" />
+
+    <TextView
+        android:id="@+id/tvLabelMail"
+        android:text="@string/email_label"
+        style="@style/DataTextStyle"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvUser"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="28dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:text="Data mail"
+        style="@style/DataTextStyle"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelMail"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_width="0dp"
+        android:layout_height="28dp" />
+
+    <TextView
+        android:id="@+id/tvLabelSex"
+        android:text="@string/email_label"
+        style="@style/DataTextStyle"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="28dp" />
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:text="Data mail"
+        style="@style/DataTextStyle"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelSex"
         app:layout_constraintStart_toEndOf="@+id/glStartForm"
         app:layout_constraintEnd_toStartOf="@+id/glEndForm"
         android:layout_width="0dp"
