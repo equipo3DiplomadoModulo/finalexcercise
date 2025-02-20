@@ -4,7 +4,7 @@
 
     <!-- ********* Login Activity ************** -->
     <!-- Login Fragment Form -->
-    <string name="title_login">Ingresa tu información</string>
+    <string name="title_login">Enter your access data</string>
     <string name="user">User</string>
     <string name="password">Password</string>
     <string name="button_login">Log in</string>
