@@ -16,7 +16,7 @@
     <string name="name">Name</string>
     <string name="secondname">Second name</string>
     <string name="email">e-mail</string>
-    <string name="sex">Indicate your gender</string>
+    <string name="sex_label">Indicate your gender</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="set_password">Set your password</string>
@@ -29,7 +29,7 @@
     <string name="name_label">Name</string>
     <string name="user_label">User</string>
     <string name="email_label">Email</string>
-    <string name="sex_label">Email</string>
+    <string name="sex_label_welcome">Gender</string>
     <string name="title_welcome">Welcome</string>
     <string name="button_exit">Exit</string>
     <string name="logout_message">Has logged out</string>

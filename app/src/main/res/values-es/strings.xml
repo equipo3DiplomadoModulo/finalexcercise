@@ -1,32 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">proyectofinal</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <!-- ********* Login Activity ************** -->
     <!-- Login Fragment Form -->
-    <string name="title_login">Enter your access data</string>
-    <string name="user">User</string>
-    <string name="password">Password</string>
-    <string name="button_login">Log in</string>
-    <string name="register_link">Have you not registered yet?</string>
+    <string name="title_login">Ingresa tu información</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="button_login">Iniciar sesión</string>
+    <string name="register_link">¿Aun no te has registrado?</string>
+    <string name="login_empty">Ingresa tu usuariio y contraseña</string>
 
     <!-- Register Fragment Form -->
-    <string name="title_register">Register your data</string>
-    <string name="name">Name</string>
-    <string name="secondname">Second name</string>
-    <string name="email">e-mail</string>
-    <string name="sex_label">Indicate your gender</string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
-    <string name="set_password">Set your password</string>
-    <string name="confirm_password">Confirm your password</string>
-    <string name="error_messages">Missing entry</string>
-    <string name="button_register">Register</string>
-    <string name="buton_cancel">Cancel</string>
+    <string name="title_register">Registra tu información</string>
+    <string name="name">Nombre</string>
+    <string name="secondname">Segundo Nombre</string>
+    <string name="email">Correo</string>
+    <string name="sex_label">Indicata tu sexo</string>
+    <string name="male">Masculino</string>
+    <string name="female">Femenino</string>
+    <string name="set_password">Crea una contraseña</string>
+    <string name="confirm_password">Confirma tu contraseña</string>
+    <string name="error_messages">Campo faltante</string>
+    <string name="button_register">Registrar</string>
+    <string name="buton_cancel">Cancelar</string>
 
     <!-- ********* Loged Activity ************** -->
-    <string name="title_welcome">Welcome</string>
-    <string name="button_exit">Exit</string>
-    <string name="logout_message">Has logged out</string>
+    <string name="name_label">Nombre</string>
+    <string name="user_label">Usuarii</string>
+    <string name="email_label">Correo</string>
+    <string name="sex_label_welcome">Sexo</string>
+    <string name="title_welcome">Bienvenido</string>
+    <string name="button_exit">Salir</string>
+    <string name="logout_message">Has finalizado tu sesión</string>
 </resources>

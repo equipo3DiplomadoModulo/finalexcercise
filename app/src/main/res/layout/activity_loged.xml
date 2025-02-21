@@ -129,7 +129,7 @@
 
     <TextView
         android:id="@+id/tvLabelSex"
-        android:text="@string/email_label"
+        android:text="@string/sex_label_welcome"
         style="@style/DataTextStyle"
         android:textStyle="bold"
         android:textSize="18sp"
