@@ -9,7 +9,7 @@
     <string name="password">Contraseña</string>
     <string name="button_login">Iniciar sesión</string>
     <string name="register_link">¿Aun no te has registrado?</string>
-    <string name="login_empty">Ingresa tu usuariio y contraseña</string>
+    <string name="login_empty">Ingresa tu usuario y contraseña</string>
 
     <!-- Register Fragment Form -->
     <string name="title_register">Registra tu información</string>
@@ -31,6 +31,6 @@
     <string name="email_label">Correo</string>
     <string name="sex_label_welcome">Sexo</string>
     <string name="title_welcome">Bienvenido</string>
-    <string name="button_exit">Salir</string>
-    <string name="logout_message">Has finalizado tu sesión</string>
+    <string name="button_exit">Cerrar sesión</string>
+    <string name="logout_message">Has cerrado tu sesión</string>
 </resources>

@@ -31,9 +31,7 @@ class ReceiveParamsFragment : Fragment() {
         binding.tvMessages.text=""
 
         setHasOptionsMenu(false)
-        (activity as
-
-                AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(false)
+        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
         (activity as AppCompatActivity).supportActionBar?.hide()
 
@@ -110,38 +108,32 @@ class ReceiveParamsFragment : Fragment() {
             }
             else {
                 startActivity(logedActivity)
+
             }
+            val fragmentTransaction = parentFragmentManager.beginTransaction()
+                fragmentTransaction.addToBackStack(null)
+                fragmentTransaction.commit()
+
         }
         val btCancel: Button= view.findViewById(R.id.btCancel)
         btCancel.setOnClickListener {
-            val fragmentTransaction =
-                parentFragmentManager.beginTransaction()
 
+            val fragmentTransaction = parentFragmentManager.beginTransaction()
             val sendParmsFragment = SendParmsFragment()
-            fragmentTransaction.replace(R.id.paramsContainer,
-
-                sendParmsFragment)
-
-//fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.replace(R.id.paramsContainer, sendParmsFragment)
+            fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
     }
-// EXTRA_USERNAME
-// EXTRA_NAME
-// EXTRA_SECOND_NAME
-// EXTRA_EMAIL
-// EXTRA_GENDER
-// EXTRA_PASSWORD
-// EXTRA_PASSWORD2
+
+
 
     companion object {
-
         @JvmStatic
         fun newInstance() = ReceiveParamsFragment()
     }
     private fun getRgLabel(checkedId: Int, isFromButton :
     Boolean): String {
-
         return when(checkedId){
             binding.rbWomen.id->{
                 if (isFromButton) "Woman" else "Woman"
@@ -152,4 +144,7 @@ class ReceiveParamsFragment : Fragment() {
             else ->"Género no seleccionado"
         }
     }
+
+
+
 }

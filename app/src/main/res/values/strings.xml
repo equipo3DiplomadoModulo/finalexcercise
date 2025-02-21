@@ -31,6 +31,6 @@
     <string name="email_label">Email</string>
     <string name="sex_label_welcome">Gender</string>
     <string name="title_welcome">Welcome</string>
-    <string name="button_exit">Exit</string>
+    <string name="button_exit">Log out</string>
     <string name="logout_message">Has logged out</string>
 </resources>

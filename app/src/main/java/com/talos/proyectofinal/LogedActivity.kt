@@ -15,6 +15,7 @@ class LogedActivity : AppCompatActivity() {
     private val register = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){}
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_loged)
 
         val tvUser = findViewById<TextView>(R.id.tvUser)
@@ -61,12 +62,17 @@ class LogedActivity : AppCompatActivity() {
             Toast.makeText(this, "$exitMessage" , Toast.LENGTH_SHORT).show()
 
             register.launch(intent)
+
+            finish()
         }
 
+    }
 
-
-
-
+    override fun onBackPressed() {
+        super.onBackPressed()
+        var exitMessage : String = getString(R.string.logout_message)
+        Toast.makeText(this, "$exitMessage", Toast.LENGTH_SHORT).show()
+        finish();
     }
 
 }

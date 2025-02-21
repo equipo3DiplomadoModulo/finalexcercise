@@ -20,16 +20,13 @@ class SendParmsFragment : Fragment() {
 
     private lateinit var binding : FragmentSendParmsBinding
 
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         binding  = FragmentSendParmsBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -50,10 +47,17 @@ class SendParmsFragment : Fragment() {
             }else{
                 val intent = Intent(requireContext(), LogedActivity::class.java).apply {
                     putExtra("EXTRA_USER", user.toString())
-                    //Toast.makeText(requireContext(), "name: $name", Toast.LENGTH_LONG).show()
+
                 }
                 startActivity(intent)
+
+                view.findViewById<EditText>(R.id.etUser).setText("")
+                view.findViewById<EditText>(R.id.etPassword).setText("")
+
             }
+            val fragmentTransaction = parentFragmentManager.beginTransaction()
+            fragmentTransaction.addToBackStack(null)
+
         }
 
         binding.tvRegister.setOnClickListener {
@@ -63,11 +67,9 @@ class SendParmsFragment : Fragment() {
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
-
     }
 
     companion object {
-
         @JvmStatic
         fun newInstance() = SendParmsFragment()
     }
