@@ -33,7 +33,21 @@ class LogedActivity : AppCompatActivity() {
                 tvEmail.text= user + "@gmail.com" // por poner un correo
                 tvSex.text= "Hombre"
 
-                //Toast.makeText(this, "$user" , Toast.LENGTH_SHORT).show()
+               // Toast.makeText(this, "$user" , Toast.LENGTH_SHORT).show()
+            }
+            if (it.containsKey("EXTRA_NAME")) {
+                val name = it.getString("EXTRA_NAME").toString()
+                val secondname = it.getString("EXTRA_SECOND_NAME").toString()
+                val user = it.getString("EXTRA_USERNAME").toString()
+                val email = it.getString("EXTRA_EMAIL").toString()
+                val gender = it.getString("EXTRA_GENDER").toString()
+
+                tvName.text = name + " " + secondname
+                tvUser.text = user
+                tvEmail.text= email
+                tvSex.text= gender
+
+                 //Toast.makeText(this, "Paso un dato porque hay name" , Toast.LENGTH_SHORT).show()
             }
         }
 

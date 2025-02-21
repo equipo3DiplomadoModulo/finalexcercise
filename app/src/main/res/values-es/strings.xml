@@ -27,7 +27,7 @@
 
     <!-- ********* Loged Activity ************** -->
     <string name="name_label">Nombre</string>
-    <string name="user_label">Usuarii</string>
+    <string name="user_label">Usuario</string>
     <string name="email_label">Correo</string>
     <string name="sex_label_welcome">Sexo</string>
     <string name="title_welcome">Bienvenido</string>

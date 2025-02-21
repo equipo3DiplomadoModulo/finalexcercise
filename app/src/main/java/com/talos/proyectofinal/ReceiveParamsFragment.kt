@@ -58,13 +58,13 @@ class ReceiveParamsFragment : Fragment() {
             val logedActivity = Intent(requireContext(),
                 LogedActivity::class.java).apply {
 
-                putExtra("EXTRA_USERNAME","User: $etUser")
-                putExtra("EXTRA_NAME","Name: $etName")
-                putExtra("EXTRA_SECOND_NAME", "Second:$etSecondName")
+                putExtra("EXTRA_USERNAME","$etUser")
+                putExtra("EXTRA_NAME", "$etName")
+                putExtra("EXTRA_SECOND_NAME", "$etSecondName")
 
-                putExtra("EXTRA_EMAIL", "Email: $etEmail")
-                putExtra("EXTRA_PASSWORD","Password: $etPass")
-                putExtra("EXTRA_GENDER", "GENDER: $selectRgGroup")
+                putExtra("EXTRA_EMAIL", "$etEmail")
+                putExtra("EXTRA_PASSWORD","$etPass")
+                putExtra("EXTRA_GENDER", "$selectRgGroup")
             }
 
 //AQUÍ VAN LAS VALIDACIONES Y EL ENVÍO DE LOS DATOS
